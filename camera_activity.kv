@@ -1,0 +1,28 @@
+<CameraClick>:
+    orientation: 'vertical'
+    padding: 20
+    Label:
+        size_hint: [1,.05]
+        id: label
+        text: "|"
+    Image:
+        id: img
+        source: 'home.gif'
+        anim_delay: 0
+        size_hint: [1,.95]
+    BoxLayout:
+        id: box
+        disabled: True
+        size_hint: [1,.1]
+        orientation: 'horizontal'
+        opacity: 0
+        Button:
+            id: btn1
+            size_hint: [.5,1]
+            on_press: root.repeat()
+            text: "Repetir"
+        Button:
+            id: btn2
+            on_press: root.save()
+            size_hint: [.5,1]
+            text: "Aceitar"
