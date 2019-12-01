@@ -17,7 +17,7 @@ import os
 import cv2
 import numpy as np
 import time
-import text_detection_app as tda
+import to_detect as tda
 
 
 class camera_activity(App):
